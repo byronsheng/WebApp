@@ -20,5 +20,6 @@ namespace SneakerWatcher.Services
             WebClient client = new WebClient();
             string s = client.DownloadString(_url);
         }
+
     }
 }
