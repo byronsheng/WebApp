@@ -1,16 +1,12 @@
-﻿using SneakerWatcher.Models;
-using System;
-using System.Collections.Generic;
+﻿using System;
 using System.IO;
-using System.Linq;
 using System.Net;
-using System.Threading.Tasks;
 
 namespace SneakerWatcher.Services
 {
     public class GetPageUsingUrl
     {
-        string _url;
+        readonly string _url;
 
         public GetPageUsingUrl(string url)
         {
