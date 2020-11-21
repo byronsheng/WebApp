@@ -2,8 +2,9 @@
 {
     public class Sneaker
     {
-        string Name { get; set; }
-        double Price { get; set; }
-        string Source { get; set; }
+        public string Name { get; set; }
+        public double Price { get; set; }
+        public string Source { get; set; }
     };
 }
+

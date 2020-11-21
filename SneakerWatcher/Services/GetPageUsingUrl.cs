@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SneakerWatcher.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -19,7 +20,17 @@ namespace SneakerWatcher.Services
         {
             WebClient client = new WebClient();
             string s = client.DownloadString(_url);
-        }
 
+
+            var sneaker = new Sneaker()
+            {
+                Name = "Jordan 1",
+                Price = 129.9,
+                Source = "Nike.de"
+                
+            };
+
+            string name = sneaker.Name;
+        }
     }
 }
