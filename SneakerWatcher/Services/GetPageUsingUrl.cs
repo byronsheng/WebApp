@@ -13,7 +13,7 @@ namespace SneakerWatcher.Services
             _url = url;
         }
 
-        public void GetPage()
+        public string GetPage()
         {
             WebClient client = new WebClient();
             string s = client.DownloadString(_url);
@@ -25,8 +25,7 @@ namespace SneakerWatcher.Services
                 stream.Close();
             }
 
-            Console.WriteLine(s.ToString());
-            
+            return s.ToString();
         }
     }
 }
